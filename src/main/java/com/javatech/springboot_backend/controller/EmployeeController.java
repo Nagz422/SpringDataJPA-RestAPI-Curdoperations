@@ -21,6 +21,12 @@ public class EmployeeController {
 		super();
 		this.empService = empService;
 	}
+
+
+	@GetMapping
+	public String hello() {
+		return "Hi Nagendra..!";
+	}
 	
 	@PostMapping
 	public ResponseEntity<Employee> saveEmployeee(@RequestBody Employee emp){
